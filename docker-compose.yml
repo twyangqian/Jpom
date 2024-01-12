@@ -16,6 +16,6 @@ services:
     volumes:
       - ./jpom-volumes/data:/usr/local/jpom-server/data
       - ./jpom-volumes/logs:/usr/local/jpom-server/logs
-      - ./jpom-volumes/conf:/usr/local/jpom-server/conf
+      - ./jpom-volumes/conf:/usr/local/jpom-server/conf_default
     ports:
       - "2122:2122"
