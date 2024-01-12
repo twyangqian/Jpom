@@ -4,6 +4,8 @@ services:
     env_file:
       - env-release.env
     image: jpomdocker/jpom:server-${JPOM_VERSION}
+    container_name: jpom-server
+    restart: always
     build:
       dockerfile: ./modules/server/Dockerfile
       context: .
